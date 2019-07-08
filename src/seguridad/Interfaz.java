@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package seguridad;
 
 import java.util.ArrayList;
@@ -10,7 +5,7 @@ import javax.swing.JFrame;
 
 /**
  *
- * @author Oriana
+ * @author Parra
  */
 public class Interfaz {
 
@@ -26,10 +21,9 @@ public class Interfaz {
     public static void setInterfaz(ArrayList interfaz) {
         Interfaz.interfaz = interfaz;
     }
-    
-    public static JFrame getInterfaz(int index){
+
+    public static JFrame getInterfaz(int index) {
         return (JFrame) interfaz.get(index);
     }
-    
-    
+
 }
