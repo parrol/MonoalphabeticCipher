@@ -80,7 +80,7 @@ public class MonoAlphabeticCipher {
                 return (char) intLetter;
             }
         }
-        return letter = (char) intLetter;
+        return (char) intLetter;
     }
 
     public static char changeLetterD(char letter, int offset) {
@@ -100,6 +100,32 @@ public class MonoAlphabeticCipher {
         }
 
         return (char) intLetter;
+    }
+
+    public static String fuerzaBruta(String password) {
+        int maxchr = 255;
+        StringBuilder result = new StringBuilder();
+        int length = 0;
+
+        while (true) {
+            if (password.equals(result) || length >= password.length()) {
+                break;
+            }
+
+            for (int i = 0; i <= maxchr; i++) {
+                char current = password.charAt(length);
+                char chrMatch = (char) i;
+
+                if (current == chrMatch) {
+                    result.append(current);
+                    length++;
+                    break;
+                }
+            }
+        }
+
+        System.out.println(String.format("result: %s", result));
+        return result.toString();
     }
 
 }

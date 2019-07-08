@@ -10,7 +10,6 @@ import javax.swing.JFrame;
 public class Interfaz {
 
     public static ArrayList interfaz = new ArrayList<JFrame>();
-
     public Interfaz() {
     }
 

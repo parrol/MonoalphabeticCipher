@@ -9,6 +9,8 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import ventanas.CifradoCesar;
 import ventanas.DescifradoCesar;
+import ventanas.DescifrarFuerzaBruta;
+import ventanas.MensajeFuerzaBruta;
 import ventanas.Menu;
 import ventanas.Opciones;
 
@@ -25,12 +27,16 @@ public class Main {
         Opciones opciones = new Opciones();
         CifradoCesar cifradoCesar = new CifradoCesar();
         DescifradoCesar descifradoCesar = new DescifradoCesar();
+        MensajeFuerzaBruta fuerza = new MensajeFuerzaBruta();
+        DescifrarFuerzaBruta bruta = new DescifrarFuerzaBruta();
         
 
         Interfaz.getInterfaz().add(0, main);
         Interfaz.getInterfaz().add(1, opciones);
         Interfaz.getInterfaz().add(2, cifradoCesar);
         Interfaz.getInterfaz().add(3, descifradoCesar);
+        Interfaz.getInterfaz().add(4, fuerza);
+        Interfaz.getInterfaz().add(5, bruta);
         
     }
 }

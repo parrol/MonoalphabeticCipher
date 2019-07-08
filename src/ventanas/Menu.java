@@ -122,7 +122,8 @@ public class Menu extends javax.swing.JFrame {
     }//GEN-LAST:event_b_salirActionPerformed
 
     private void b_generarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b_generarActionPerformed
-
+        Interfaz.getInterfaz(4).setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_b_generarActionPerformed
 
     /**
